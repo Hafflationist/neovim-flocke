@@ -5,10 +5,6 @@
       url = "github:neovim/neovim";
       flake = false;
     };
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
-    };
   };
 
   outputs = {
@@ -31,7 +27,7 @@
       overlay = self.overlays.default;
       devShells.${system}.default = pkgs.mkShell {
         packages = [
-          self.packages.${system}.default
+          #self.packages.${system}.default
           pkgs.npins
         ];
       };
@@ -47,19 +43,26 @@
                 pname: v: (pkgs.vimUtils.buildVimPluginFrom2Nix {
                   inherit pname;
                   version = builtins.substring 0 8 v.revision;
-                  src = builtins.fetchTarball {
-                    inherit (v) url;
-                    sha256 = v.hash;
-                  };
+                  src = if v.url != null 
+                        then builtins.fetchTarball {
+                            inherit (v) url;
+                            sha256 = v.hash;
+                          }
+                          else builtins.fetchGit {
+                            inherit (v.repository) url;
+                            rev = v.revision;
+                          }
+                          ;
                 })
               )
               (import ./npins);
             withPython3 = true;
+            withNodeJs = true; # benötigt von coc
             extraPython3Packages = _: [];
             withRuby = true;
             viAlias = false;
             vimAlias = false;
-            customRC = import ./lua;
+            customRC = (import ./pluginConfig) self;
           };
           wrapperArgs = let
             path = lib.makeBinPath (

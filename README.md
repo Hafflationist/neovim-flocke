@@ -1,33 +1,26 @@
-# Finally
-After much struggling I've figured out how to make a neovim flake which works how I want it too
-
-# Test it out
-With flakes enabled
+# Ausprobieren
+Mit Flocken:
 ```console
-nix run github:Gerg-L/nvim-flake
+nix run github:Hafflationist/neovim-flocke
 ```
-Legacy
-```console
-nix-shell -p 'with import <nixpkgs> {}; builtins.fetchTarball "https://github.com/Gerg-L/nvim-flake/archive/master.tar.gz" ' --run nvim
-```
-# To install
+# Installieren
 
-## Flakes
-Add this flake as an input
+## Flocken
+Füge diese Flocke als Eingabe hinzu:
 ```nix
 #flake.nix
 {
   inputs = {
     nvim-flake = {
-      url = "github:Gerg-L/nvim-flake";
+      url = "github:Hafflationist/neovim-flocke";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 ...
 ```
-(Make sure you're passing inputs to your [modules](https://blog.nobbz.dev/posts/2022-12-12-getting-inputs-to-modules-in-a-flake/))
-### Add to user environment
+(Stelle sicher, dass die Eingaben an deine [Module](https://blog.nobbz.dev/posts/2022-12-12-getting-inputs-to-modules-in-a-flake/) weitergibst)
+### Hinzufügen in Nutzerumgebung
 ```nix
-#anyModule.nix
+#irgendeinModul.nix
 {inputs, pkgs, ...}:
 {
 
@@ -42,48 +35,6 @@ Add this flake as an input
 }
 ```
 
-## Legacy
-Use fetchTarball
-```nix
-#anyModule.nix
-{pkgs, ...}:
-let
-  nvim-flake = import (builtins.fetchTarball {
-  # Get the revision by choosing a version from https://github.com/Gerg-L/nvim-flake/commits/master
-  url = "https://github.com/Gerg-L/nvim-flake/archive/<revision>.tar.gz";
-  # Get the hash by running `nix-prefetch-url --unpack <url>` on the above url
-  sha256 = "<hash>";
-});
-in
-{
-# add system wide
-  environment.systemPackages = [
-    nvim-flake.packages.${pkgs.system}.neovim
-  ];
-# add per-user
-  users.users."<name>".packages = [
-    nvim-flake.packages.${pkgs.system}.neovim
-  ];
-}
-```
-
-# Forking usage guide
-Update the flake like any other ``nix flake update``
-
-Extra runtime dependancies can be added [here](https://github.com/Gerg-L/nvim-flake/blob/367075ba580bc1af6b3acd8237ee56c3cef07840/flake.nix#L38)
-
-Add/remove plugins through /plugins/nvfetcher.toml
-
-Use ``nvfetcher`` to update the list.
-
-All plugins added will be fetched and installed.
-
-All lua configuration is done in the /lua directory, and imported and ordered through /lua/default.nix.
-
 ## Inspiration
-- [@the-argus's](https://github.com/the-argus) [nvim-config](https://github.com/the-argus/nvim-config)
-- [@fufexan's](https://github.com/fufexan) [dotfiles](https://github.com/fufexan/dotfiles/tree/main/home/editors/neovim)
-- [@NotAShelf's](https://github.com/NotAShelf) [neovim-flake](https://github.com/NotAShelf/neovim-flake)
-- [@wiltaylor's](https://github.com/wiltaylor) [neovim-flake](https://github.com/wiltaylor/neovim-flake)
-- [@jordanisaacs's](https://github.com/jordanisaacs) [neovim-flake](https://github.com/jordanisaacs/neovim-flake)
-- [@gvolpe's](https://github.com/gvolpe) [neovim-flake](https://github.com/gvolpe/neovim-flake)
+- [neovim-flake](https://github.com/gvolpe/neovim-flake) von [@gvolpe](https://github.com/gvolpe)
+- [nvim-flake](https://github.com/Gerg-L/nvim-flake) von [@Gerg-L](https://github.com/Gerg-L)

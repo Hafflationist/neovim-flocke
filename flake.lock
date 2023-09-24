@@ -1,29 +1,13 @@
 {
   "nodes": {
-    "flake-compat": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1673956053,
-        "narHash": "sha256-4gtG9iQuiKITOjNQQeQIpoIB6b16fm+504Ch3sNKLd8=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "35bb57c0c8d8b62bbfd284272c928ceb64ddbde9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "type": "github"
-      }
-    },
     "neovim-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1694922031,
-        "narHash": "sha256-12OiYaH906BnWOK+nlXbNOi3fMmt/3cAqILTyVXzxo8=",
+        "lastModified": 1695039858,
+        "narHash": "sha256-fTVsLFJALKQArqwKAF1g4iZ0u72lj4eDHNrvDNsKCUw=",
         "owner": "neovim",
         "repo": "neovim",
-        "rev": "d70667a1c1f887529d1b4952325aff368c200ef1",
+        "rev": "46402c16c0c38701469c52fb28d16f2483cc7a72",
         "type": "github"
       },
       "original": {
@@ -50,7 +34,6 @@
     },
     "root": {
       "inputs": {
-        "flake-compat": "flake-compat",
         "neovim-src": "neovim-src",
         "nixpkgs": "nixpkgs"
       }
