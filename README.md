@@ -17,7 +17,7 @@ Füge diese Flocke als Eingabe hinzu:
     };
 ...
 ```
-(Stelle sicher, dass die Eingaben an deine [Module](https://blog.nobbz.dev/posts/2022-12-12-getting-inputs-to-modules-in-a-flake/) weitergibst)
+(Stelle sicher, dass du Eingaben an deine [Module](https://blog.nobbz.dev/posts/2022-12-12-getting-inputs-to-modules-in-a-flake/) weitergibst)
 ### Hinzufügen in Nutzerumgebung
 ```nix
 #irgendeinModul.nix
