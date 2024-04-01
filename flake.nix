@@ -60,8 +60,8 @@
             withNodeJs = true; # benötigt von coc
             extraPython3Packages = _: [];
             withRuby = true;
-            viAlias = false;
-            vimAlias = false;
+            viAlias = true;
+            vimAlias = true;
             customRC = (import ./pluginConfig) self;
           };
           wrapperArgs = let
