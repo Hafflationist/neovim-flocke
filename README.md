@@ -11,7 +11,7 @@ Füge diese Flocke als Eingabe hinzu:
 #flake.nix
 {
   inputs = {
-    nvim-flake = {
+    neovim-flocke = {
       url = "github:Hafflationist/neovim-flocke";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -26,11 +26,11 @@ Füge diese Flocke als Eingabe hinzu:
 
 # add system wide
   environment.systemPackages = [
-    inputs.nvim-flake.packages.${pkgs.system}.neovim
+    inputs.neovim-flocke.packages.${pkgs.system}.neovim
   ];
 # add per-user
   users.users."<name>".packages = [
-    inputs.nvim-flake.packages.${pkgs.system}.neovim
+    inputs.neovim-flocke.packages.${pkgs.system}.neovim
   ];
 }
 ```
