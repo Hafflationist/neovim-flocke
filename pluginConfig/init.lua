@@ -33,6 +33,8 @@ vim.g.mapleader = ' '
 -- SECTION: autopairs
 require('nvim-autopairs').setup()
 
+require('suda-vim').setup()
+
 -- SECTION: indent blankline
 require('indent_blankline').setup {
     char = '│',

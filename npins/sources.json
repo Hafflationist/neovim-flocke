@@ -238,6 +238,16 @@
       "url": "https://api.github.com/repos/nvim-lua/plenary.nvim/tarball/v0.1.3",
       "hash": "17vvl06jc5vrfrv7gljflkqykshhg84wnhbl9br4pm050ywlg4ng"
     },
+    "suda.vim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "url": "https://github.com/lambdalisue/suda.vim"
+      },
+      "branch": "master",
+      "revision": "66727b416837836712975e748bc8a19fb6cf4ec3",
+      "url": null
+    },
     "telescope.nvim": {
       "type": "Git",
       "repository": {
