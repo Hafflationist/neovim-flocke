@@ -241,7 +241,7 @@
     "suda.vim": {
       "type": "Git",
       "repository": {
-        "type": "GitHub",
+        "type": "Git",
         "url": "https://github.com/lambdalisue/suda.vim"
       },
       "branch": "master",
