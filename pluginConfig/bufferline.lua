@@ -1,54 +1,41 @@
 -- SECTION: nvimBufferline
 require('nvim-web-devicons')
 require('bufferline').setup {
-    -- TODO: Richtige Farben setzen und auf highlights ohne 2 setzen
-    highlights2 = {
-        fill = {
-            fg = '#ff00ff',
-            bg = '#ff00ff'
-        },
-        background = {
-            fg = '#ff00ff',
-            bg = '#ff00ff'
+    highlights = {
+        background = { -- Registerkarten im Hintergrund
+            fg = '#aaaaaa',
+            bg = '#2b2739',
+            --bg = '#1a1628'
         },
         tab = {
-            fg = '#ff00ff',
+            fg = '#ffffff',
             bg = '#ff00ff'
-        },
-        tab_selected = {
-            fg = '#00ffff',
-            bg = '#ffff00',
-        },
-        tab_separator = {
-            fg = '#ffff00',
-            bg = '#00ffff',
         },
         tab_separator_selected = {
             fg = '#ff0000',
             bg = '#00ff00',
             sp = '#0000ff',
-            --underline = '<colour-value-here>',
         },
-        buffer_visible = {
-            fg = '#ff0000',
-            bg = '#ff0000',
+        buffer_visible = { -- offene Registerkarte ohne Fokus
+            fg = '#ffffff',
+            bg = '#3c384a'
         },
-        buffer_selected = {
-            fg = '#ff0000',
-            bg = '#ff0000',
+        buffer_selected = { -- offene Registerkarte mit Fokus
+            fg = '#ffffff',
+            bg = '#662266',
             italic = false,
         },
         separator_selected = {
-            fg = '#ff0000',
-            bg = '#000000',
+            fg = '#1a1628',
+            bg = '#662266',
         },
         separator_visible = {
-            fg = '#ff0000',
-            bg = '#000000',
+            fg = '#1a1628',
+            bg = '#3c384a'
         },
         separator = {
-            fg = '#ff0000',
-            bg = '#000000',
+            fg = '#1a1628',
+            bg = '#2b2739',
         },
     },
     options = {
@@ -66,8 +53,7 @@ require('bufferline').setup {
         close_icon = '',
         left_trunc_marker = '',
         right_trunc_marker = '',
-        --separator_style = 'slant',
-        separator_style = 'thin',
+        separator_style = 'slant',
         show_buffer_icons = true,
         show_buffer_close_icons = false,
         show_close_icon = false,
@@ -97,19 +83,19 @@ require('bufferline').setup {
         },
     }
 }
-vim.keymap.set('n', '<leader>b1', '<Cmd>BufferLineGoToBuffer 1<CR>')
-vim.keymap.set('n', '<leader>b2', '<Cmd>BufferLineGoToBuffer 2<CR>')
-vim.keymap.set('n', '<leader>b3', '<Cmd>BufferLineGoToBuffer 3<CR>')
-vim.keymap.set('n', '<leader>b4', '<Cmd>BufferLineGoToBuffer 4<CR>')
-vim.keymap.set('n', '<leader>b5', '<Cmd>BufferLineGoToBuffer 5<CR>')
-vim.keymap.set('n', '<leader>b6', '<Cmd>BufferLineGoToBuffer 6<CR>')
-vim.keymap.set('n', '<leader>b7', '<Cmd>BufferLineGoToBuffer 7<CR>')
-vim.keymap.set('n', '<leader>b8', '<Cmd>BufferLineGoToBuffer 8<CR>')
-vim.keymap.set('n', '<leader>b9', '<Cmd>BufferLineGoToBuffer 9<CR>')
-vim.keymap.set('n', '<leader>bc', ':BufferLinePick<CR>')
-vim.keymap.set('n', '<leader>bmn', ':BufferLineMoveNext<CR>')
-vim.keymap.set('n', '<leader>bmp', ':BufferLineMovePrev<CR>')
-vim.keymap.set('n', '<leader>bn', ':BufferLineCycleNext<CR>')
-vim.keymap.set('n', '<leader>bp', ':BufferLineCyclePrev<CR>')
-vim.keymap.set('n', '<leader>bsd', ':BufferLineSortByDirectory<CR>')
-vim.keymap.set('n', '<leader>bse', ':BufferLineSortByExtension<CR>')
+vim.keymap.set('n', '<space>b1', '<Cmd>BufferLineGoToBuffer 1<CR>')
+vim.keymap.set('n', '<space>b2', '<Cmd>BufferLineGoToBuffer 2<CR>')
+vim.keymap.set('n', '<space>b3', '<Cmd>BufferLineGoToBuffer 3<CR>')
+vim.keymap.set('n', '<space>b4', '<Cmd>BufferLineGoToBuffer 4<CR>')
+vim.keymap.set('n', '<space>b5', '<Cmd>BufferLineGoToBuffer 5<CR>')
+vim.keymap.set('n', '<space>b6', '<Cmd>BufferLineGoToBuffer 6<CR>')
+vim.keymap.set('n', '<space>b7', '<Cmd>BufferLineGoToBuffer 7<CR>')
+vim.keymap.set('n', '<space>b8', '<Cmd>BufferLineGoToBuffer 8<CR>')
+vim.keymap.set('n', '<space>b9', '<Cmd>BufferLineGoToBuffer 9<CR>')
+vim.keymap.set('n', '<space>bc', ':BufferLinePick<CR>')
+vim.keymap.set('n', '<space>bmn', ':BufferLineMoveNext<CR>')
+vim.keymap.set('n', '<space>bmp', ':BufferLineMovePrev<CR>')
+vim.keymap.set('n', '<space>bn', ':BufferLineCycleNext<CR>')
+vim.keymap.set('n', '<space>bp', ':BufferLineCyclePrev<CR>')
+vim.keymap.set('n', '<space>bsd', ':BufferLineSortByDirectory<CR>')
+vim.keymap.set('n', '<space>bse', ':BufferLineSortByExtension<CR>')
