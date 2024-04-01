@@ -11,7 +11,7 @@ self:
     ./init.lua
 #    ./lspconfig.lua
     ./lualine.lua
-    ./navbuddy.lua
+#    ./navbuddy.lua
     ./neoscroll.lua
     ./nightfox-nvim.lua
     ./noice.lua
