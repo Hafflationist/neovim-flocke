@@ -4,7 +4,7 @@ self:
   map (x: "luafile ${x}")
   [
     ./airline.lua
-    ./barbecue.lua
+#    ./barbecue.lua
     ./bufferline.lua
     ./coc.lua
     ./gitsigns.lua
