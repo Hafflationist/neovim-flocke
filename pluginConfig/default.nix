@@ -9,7 +9,7 @@ self:
     ./coc.lua
     ./gitsigns.lua
     ./init.lua
-    ./lspconfig.lua
+#    ./lspconfig.lua
     ./lualine.lua
     ./navbuddy.lua
     ./neoscroll.lua
