@@ -78,7 +78,6 @@
                   nil
                   ghc
                   haskell-language-server
-                  rnix-lsp
                   #other
                   
                   ripgrep
