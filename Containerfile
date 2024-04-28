@@ -10,8 +10,6 @@ COPY pluginConfig/* flocke/pluginConfig
 
 WORKDIR /flocke
 
-RUN ls
-
 RUN nix --extra-experimental-features "nix-command flakes" build
 
 ENTRYPOINT nix --extra-experimental-features "nix-command flakes" run
