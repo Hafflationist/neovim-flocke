@@ -56,10 +56,10 @@
                 })
               )
               (import ./npins);
-            withPython3 = true;
+            withPython3 = false; # unnötig, bläht den Bums nur auf
             withNodeJs = true; # benötigt von coc
             extraPython3Packages = _: [];
-            withRuby = true;
+            withRuby = false; # unnötig, bläht den Bums nur auf
             viAlias = true;
             vimAlias = true;
             customRC = (import ./pluginConfig) self;
