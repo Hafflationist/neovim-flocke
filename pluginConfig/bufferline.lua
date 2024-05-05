@@ -37,6 +37,46 @@ require('bufferline').setup {
             fg = '#1a1628',
             bg = '#2b2739',
         },
+        warning = {
+            bg = '#2b2739',
+        },
+        warning_visible = {
+            bg = '#3c384a'
+        },
+        warning_selected = {
+            bg = '#662266',
+            italic = false,
+        },
+        warning_diagnostic = {
+            bg = '#2b2739',
+        },
+        warning_diagnostic_visible = {
+            bg = '#3c384a'
+        },
+        warning_diagnostic_selected = {
+            bg = '#662266',
+            italic = false,
+        },
+        error = {
+            bg = '#2b2739',
+        },
+        error_visible = {
+            bg = '#3c384a'
+        },
+        error_selected = {
+            bg = '#662266',
+            italic = false,
+        },
+        error_diagnostic = {
+            bg = '#2b2739',
+        },
+        error_diagnostic_visible = {
+            bg = '#3c384a'
+        },
+        error_diagnostic_selected = {
+            bg = '#662266',
+            italic = false,
+        },
     },
     options = {
         close_command = function(bufnum)
