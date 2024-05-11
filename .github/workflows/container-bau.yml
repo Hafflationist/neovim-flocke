@@ -19,8 +19,14 @@ jobs:
     - name: Repositorium ziehen
       uses: actions/checkout@v2
 
+    - name: Nix-Installation
+      uses: cachix/install-nix-action@v25
+      with:
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Baue Containerabbild
-      run: docker build -t hafflationist/h-nvim:${{ github.run_number }} -f Containerfile .
+      run: docker load < $(nix build .#dockerImage)
+      #run: docker build -t hafflationist/h-nvim:${{ github.run_number }} -f Containerfile .
 
     - name: Beim Dockerdrehkreuz anmelden
       uses: docker/login-action@v1
@@ -29,4 +35,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Veröffentlichung auf Dockerdrehkreuz
-      run: docker push hafflationist/h-nvim:${{ github.run_number }}
+      run: docker push hafflationist/h-nvim:latest

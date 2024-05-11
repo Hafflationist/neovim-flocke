@@ -3,6 +3,12 @@ Mit Flocken:
 ```console
 nix run github:Hafflationist/neovim-flocke
 ```
+
+Per Containerabbild:
+```console
+docker run -it -v $'($env.PWD):/lokal/' docker.io/hafflationist/h-nvim
+```
+
 # Installieren
 
 ## Flocken

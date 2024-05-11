@@ -18,8 +18,17 @@
       lib.fold lib.recursiveUpdate {}
       (map f ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"]);
   in
-    withSystem (system: let
+    withSystem (system: 
+    let
       pkgs = nixpkgs.legacyPackages.${system};
+      dockerImage = pkgs.dockerTools.buildImage {
+        name = "hafflationist/h-nvim";
+        tag = "latest";
+        copyToRoot = [ self.packages.${system}.neovim];
+        config = {
+          Cmd = [ "nvim" "lokal" "new" "-c" "bn" ];
+        };
+      };
     in {
       formatter.${system} = pkgs.alejandra;
 
@@ -33,6 +42,8 @@
       };
 
       packages.${system} = {
+        inherit dockerImage;
+
         default = self.packages.${system}.neovim;
 
         neovim = let
@@ -71,10 +82,11 @@
                 inherit
                   (pkgs)
                   #nix
+                  git
                   
                   deadnix
                   statix
-                  alejandra
+                  #alejandra
                   nil
                   ghc
                   haskell-language-server
