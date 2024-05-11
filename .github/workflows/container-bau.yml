@@ -24,6 +24,9 @@ jobs:
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Reinige Nix-Spuren
+      run: nix-store --optimise; nix-collect-garbage
+
     - name: Baue Containerabbild
       run: nix build .#dockerImage
       #run: docker build -t hafflationist/h-nvim:${{ github.run_number }} -f Containerfile .
