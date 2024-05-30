@@ -114,10 +114,3 @@ require("lspconfig").lua_ls.setup({
     return true
   end,
 })
--- CCLS (clang) config
-
-lspconfig.ccls.setup({
-  capabilities = capabilities,
-  on_attach = default_on_attach,
-  cmd = { "ccls" },
-})

@@ -6,6 +6,7 @@ self:
     ./airline.lua
 #    ./barbecue.lua
     ./bufferline.lua
+    ./cmp.lua
     ./gitsigns.lua
     ./init.lua
     ./lsp.lua

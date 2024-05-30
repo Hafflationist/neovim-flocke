@@ -28,16 +28,41 @@
       "url": "https://api.github.com/repos/akinsho/bufferline.nvim/tarball/v4.3.0",
       "hash": "0y2il1lpyb9dm8i5mz6gzlis1qf74bp81ks95k016lly6585f4nh"
     },
-    "cmp-nvim-lsp.vim": {
+    "cmp-nvim-lsp": {
       "type": "Git",
       "repository": {
-        "type": "Git",
-        "url": "https://github.com/hrsh7th/cmp-nvim-lsp"
+        "type": "GitHub",
+        "owner": "hrsh7th",
+        "repo": "cmp-nvim-lsp"
       },
       "branch": "main",
       "revision": "39e2eda76828d88b773cc27a3f61d2ad782c922d",
-      "url": null,
-      "hash": ""
+      "url": "https://github.com/hrsh7th/cmp-nvim-lsp/archive/39e2eda76828d88b773cc27a3f61d2ad782c922d.tar.gz",
+      "hash": "13zcw6c7zppvbsjlr8yj3vml6ayalvhjbbqszljmn1f9hmkpwg89"
+    },
+    "cmp-path": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "hrsh7th",
+        "repo": "cmp-path"
+      },
+      "branch": "main",
+      "revision": "91ff86cd9c29299a64f968ebb45846c485725f23",
+      "url": "https://github.com/hrsh7th/cmp-path/archive/91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz",
+      "hash": "18ixx14ibc7qrv32nj0ylxrx8w4ggg49l5vhcqd35hkp4n56j6mn"
+    },
+    "cmp-treesitter": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "ray-x",
+        "repo": "cmp-treesitter"
+      },
+      "branch": "master",
+      "revision": "958fcfa0d8ce46d215e19cc3992c542f576c4123",
+      "url": "https://github.com/ray-x/cmp-treesitter/archive/958fcfa0d8ce46d215e19cc3992c542f576c4123.tar.gz",
+      "hash": "05as01c2f7i20zkzpqbq9n8ji9bcwd678ixmxnrz9vmz5zsj8q7i"
     },
     "context.vim": {
       "type": "Git",
@@ -73,6 +98,18 @@
       "revision": "9637670896b68805430e2f72cf5d16be5b97a22a",
       "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/9637670896b68805430e2f72cf5d16be5b97a22a.tar.gz",
       "hash": "01h49q9j3hh5mi3hxsaipfsc03ypgg14r79fbm6sy63rh8a66jnl"
+    },
+    "lspkind.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "onsails",
+        "repo": "lspkind.nvim"
+      },
+      "branch": "master",
+      "revision": "1735dd5a5054c1fb7feaf8e8658dbab925f4f0cf",
+      "url": "https://github.com/onsails/lspkind.nvim/archive/1735dd5a5054c1fb7feaf8e8658dbab925f4f0cf.tar.gz",
+      "hash": "0sjd244122q7hs3xaxzxhfcfpnzjz082rbnishq6khnr9w2xs0px"
     },
     "lualine.nvim": {
       "type": "Git",
@@ -137,13 +174,14 @@
     "null-ls.nvim": {
       "type": "Git",
       "repository": {
-        "type": "Git",
-        "url": "https://github.com/jose-elias-alvarez/null-ls.nvim"
+        "type": "GitHub",
+        "owner": "jose-elias-alvarez",
+        "repo": "null-ls.nvim"
       },
       "branch": "main",
       "revision": "0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7",
-      "url": null,
-      "hash": ""
+      "url": "https://github.com/jose-elias-alvarez/null-ls.nvim/archive/0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7.tar.gz",
+      "hash": "00nkg77y9mp7ac46bdcaga36bbbrwbp7k1d6ajjgg9qf76pk8q3i"
     },
     "nvim-autopairs": {
       "type": "Git",
@@ -158,18 +196,16 @@
       "hash": "05ihrriym44g01rryaah2h2xnl183dpwcsf8q8rxzr29z0jpxxip"
     },
     "nvim-cmp": {
-      "type": "GitRelease",
+      "type": "Git",
       "repository": {
         "type": "GitHub",
         "owner": "hrsh7th",
         "repo": "nvim-cmp"
       },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "version": "v0.0.1",
-      "revision": "983453e32cb35533a119725883c04436d16c0120",
-      "url": "https://api.github.com/repos/hrsh7th/nvim-cmp/tarball/v0.0.1",
-      "hash": "0649n476jd6dqd79fmywmigz19sb0s344ablwr25gr23fp46hzaz"
+      "branch": "main",
+      "revision": "5260e5e8ecadaf13e6b82cf867a909f54e15fd07",
+      "url": "https://github.com/hrsh7th/nvim-cmp/archive/5260e5e8ecadaf13e6b82cf867a909f54e15fd07.tar.gz",
+      "hash": "1ld6xs2mby4kyq3c6b88hcn3mw0x2yhzmgc8xm65ap59dafxy58s"
     },
     "nvim-lspconfig": {
       "type": "Git",
