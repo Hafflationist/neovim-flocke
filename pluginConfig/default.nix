@@ -6,12 +6,12 @@ self:
     ./airline.lua
 #    ./barbecue.lua
     ./bufferline.lua
-    ./coc.lua
     ./gitsigns.lua
     ./init.lua
+    ./lsp.lua
 #    ./lspconfig.lua
     ./lualine.lua
-#    ./navbuddy.lua
+    ./navbuddy.lua
     ./neoscroll.lua
     ./nightfox-nvim.lua
     ./noice.lua
@@ -22,7 +22,6 @@ self:
   ]
   ++
   [
-    "let coc_config_home = '${self}/pluginConfig'"
     (builtins.readFile ./context.vim)
   ]
 )

@@ -51,7 +51,7 @@ require('lualine').setup {
         lualine_x = {
             {
                 'diagnostics',
-                sources = { 'coc' },
+                sources = { 'nvim_lsp' },
                 sections = { 'error', 'warn', 'info', 'hint' },
                 symbols = { error = '', warn = '', info = '', hint = '󰈽' },
                 colored = true,

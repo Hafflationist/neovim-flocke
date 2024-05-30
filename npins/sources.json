@@ -28,33 +28,16 @@
       "url": "https://api.github.com/repos/akinsho/bufferline.nvim/tarball/v4.3.0",
       "hash": "0y2il1lpyb9dm8i5mz6gzlis1qf74bp81ks95k016lly6585f4nh"
     },
-    "coc-java": {
-      "type": "GitRelease",
+    "cmp-nvim-lsp.vim": {
+      "type": "Git",
       "repository": {
-        "type": "GitHub",
-        "owner": "neoclide",
-        "repo": "coc-java"
+        "type": "Git",
+        "url": "https://github.com/hrsh7th/cmp-nvim-lsp"
       },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "version": "v1.22.4",
-      "revision": "4ddab9950d1b02ada175b354502224590fa60ed4",
-      "url": "https://api.github.com/repos/neoclide/coc-java/tarball/v1.22.4",
-      "hash": "0v0kp9jbdh3qnsz0hi5xi46rgn8g7972xygzjjzm3szij193pccr"
-    },
-    "coc.nvim": {
-      "type": "GitRelease",
-      "repository": {
-        "type": "GitHub",
-        "owner": "neoclide",
-        "repo": "coc.nvim"
-      },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "version": "v0.0.82",
-      "revision": "7bc1f1b3dfb4838b1f6c4f046fa4d196818d92c9",
-      "url": "https://api.github.com/repos/neoclide/coc.nvim/tarball/v0.0.82",
-      "hash": "03fh3m0gkfqcvyrjrwsmf9plqbnmznk93s3qzdfp93kx5byk32ac"
+      "branch": "main",
+      "revision": "39e2eda76828d88b773cc27a3f61d2ad782c922d",
+      "url": null,
+      "hash": ""
     },
     "context.vim": {
       "type": "Git",
@@ -151,6 +134,17 @@
       "url": "https://github.com/MunifTanjim/nui.nvim/archive/c8de23342caf8d50b15d6b28368d36a56a69d76f.tar.gz",
       "hash": "0na7mi192alj1pyskdyivn12a0nmcmzy79kmqxyz8r1cijgb33q2"
     },
+    "null-ls.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "Git",
+        "url": "https://github.com/jose-elias-alvarez/null-ls.nvim"
+      },
+      "branch": "main",
+      "revision": "0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7",
+      "url": null,
+      "hash": ""
+    },
     "nvim-autopairs": {
       "type": "Git",
       "repository": {
@@ -163,6 +157,20 @@
       "url": "https://github.com/windwp/nvim-autopairs/archive/defad64afbf19381fe31488a7582bbac421d6e38.tar.gz",
       "hash": "05ihrriym44g01rryaah2h2xnl183dpwcsf8q8rxzr29z0jpxxip"
     },
+    "nvim-cmp": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "hrsh7th",
+        "repo": "nvim-cmp"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "version": "v0.0.1",
+      "revision": "983453e32cb35533a119725883c04436d16c0120",
+      "url": "https://api.github.com/repos/hrsh7th/nvim-cmp/tarball/v0.0.1",
+      "hash": "0649n476jd6dqd79fmywmigz19sb0s344ablwr25gr23fp46hzaz"
+    },
     "nvim-lspconfig": {
       "type": "Git",
       "repository": {
@@ -174,6 +182,28 @@
       "revision": "cc388d3f6b9c7c943ae2b2dcd46ad470fd257f91",
       "url": "https://github.com/neovim/nvim-lspconfig/archive/cc388d3f6b9c7c943ae2b2dcd46ad470fd257f91.tar.gz",
       "hash": "0xw1xya93qks2azp0rg2k7fyg2ak31c3z897af9d3lx0nrhy31xs"
+    },
+    "nvim-navbuddy": {
+      "type": "Git",
+      "repository": {
+        "type": "Git",
+        "url": "https://github.com/SmiteshP/nvim-navbuddy"
+      },
+      "branch": "master",
+      "revision": "f22bac988f2dd073601d75ba39ea5636ab6e38cb",
+      "url": null,
+      "hash": ""
+    },
+    "nvim-navic": {
+      "type": "Git",
+      "repository": {
+        "type": "Git",
+        "url": "https://github.com/SmiteshP/nvim-navic"
+      },
+      "branch": "master",
+      "revision": "8649f694d3e76ee10c19255dece6411c29206a54",
+      "url": null,
+      "hash": ""
     },
     "nvim-notify": {
       "type": "GitRelease",

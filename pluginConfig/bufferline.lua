@@ -103,7 +103,7 @@ require('bufferline').setup {
         always_show_bufferline = true,
         offsets = { { filetype = 'NvimTree', text = 'Verzeichnisbaum', text_align = 'left' } },
         --sort_by = 'extension',
-        diagnostics = 'coc',
+        diagnostics = 'nvim_lsp',
         diagnostics_update_in_insert = true,
         diagnostics_indicator = function(count, level, diagnostics_dict, context)
             local s = ''
