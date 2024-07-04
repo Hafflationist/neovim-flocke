@@ -7,6 +7,7 @@ self:
 #    ./barbecue.lua
     ./bufferline.lua
     ./cmp.lua
+    ./comment.lua
     ./gitsigns.lua
     ./init.lua
     ./lsp.lua

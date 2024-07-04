@@ -1,5 +1,19 @@
 {
   "pins": {
+    "Comment.nvim": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "numToStr",
+        "repo": "Comment.nvim"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "version": "v0.8.0",
+      "revision": "e51f2b142d88bb666dcaa77d93a07f4b419aca70",
+      "url": "https://api.github.com/repos/numToStr/Comment.nvim/tarball/v0.8.0",
+      "hash": "0azzdvych6yld8w1m48nbkwm6xr3k63yr0kah7jr434s33x75j73"
+    },
     "barbecue.nvim": {
       "type": "GitRelease",
       "repository": {
