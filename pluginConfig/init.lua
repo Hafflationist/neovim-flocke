@@ -23,7 +23,6 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 vim.o.termguicolors = true
 -- vim.o.guifont = 'OverpassMono Nerd Font:h10'
-vim.o.t_Co = 256
 
 -- map leader to <Space>
 vim.keymap.set('n', ' ', '<Nop>', { silent = true, remap = false })
