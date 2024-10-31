@@ -90,6 +90,8 @@
                   nil
                   ghc
                   haskell-language-server
+                  dotnet-sdk
+                  fsautocomplete
                   #other
                   
                   ripgrep

@@ -41,3 +41,5 @@ require('indent_blankline').setup {
 
 
 -- vim.g.cursorline_timeout = 0
+
+require('ionide').setup {}

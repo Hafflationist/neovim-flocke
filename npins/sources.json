@@ -14,6 +14,17 @@
       "url": "https://api.github.com/repos/numToStr/Comment.nvim/tarball/v0.8.0",
       "hash": "0azzdvych6yld8w1m48nbkwm6xr3k63yr0kah7jr434s33x75j73"
     },
+    "Ionide-vim": {
+      "type": "Git",
+      "repository": {
+        "type": "Git",
+        "url": "https://github.com/ionide/Ionide-vim"
+      },
+      "branch": "master",
+      "revision": "e4387026585dbd98dcb5d2a007d1fa0afefa5941",
+      "url": null,
+      "hash": ""
+    },
     "barbecue.nvim": {
       "type": "GitRelease",
       "repository": {
@@ -135,6 +146,16 @@
       "revision": "45e27ca739c7be6c49e5496d14fcf45a303c3a63",
       "url": null,
       "hash": "1ixzh61d0rd8223qagd1k4bidv8jw4hsafy02idb7c1yg6fy5ixz"
+    },
+    "neofsharp.vim": {
+      "type": "Git",
+      "repository": {
+        "type": "Git",
+        "url": "https://github.com/adelarsq/neofsharp.vim"
+      },
+      "branch": "master",
+      "revision": "b8f7532bc7311a8e896ffd5d83790887163fac05",
+      "url": null
     },
     "neoscroll.nvim": {
       "type": "Git",
