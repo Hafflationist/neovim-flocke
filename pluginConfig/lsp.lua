@@ -114,3 +114,14 @@ require("lspconfig").lua_ls.setup({
     return true
   end,
 })
+
+
+require("lspconfig").hls.setup {
+  filetypes = { 'haskell', 'lhaskell', 'cabal' },
+  settings = {
+    haskell = {
+      formattingProvider = 'stylish-haskell',
+    },
+  },
+  on_attach = on_attach,
+}
