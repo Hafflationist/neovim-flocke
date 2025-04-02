@@ -4,9 +4,10 @@
     nvf.url = "github:notashelf/nvf";
   };
 
-  outputs = {nixpkgs, ...} @ inputs: {
+  outputs = { self, nixpkgs, ...} @ inputs: {
     packages.x86_64-linux = {
-      default =
+      default = self.packages.x86_64-linux.neovim;
+      neovim =
         (inputs.nvf.lib.neovimConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           modules = [
