@@ -1,6 +1,8 @@
-{ pkgs, lib, ... }:
-
 {
+  pkgs,
+  lib,
+  ...
+}: {
   config.vim = {
     viAlias = true;
     vimAlias = true;
@@ -100,7 +102,7 @@
         enable = true;
         setupOpts.keymaps = {
           basic = true;
-          extra = false;
+          extra = true;
         };
       };
       fidget-nvim.enable = true;
@@ -129,6 +131,8 @@
     autopairs.nvim-autopairs.enable = true;
 
     autocomplete.nvim-cmp.enable = true;
+    # autocomplete.nvim-cmp.mappings.complete = "<tab>";
+    autocomplete.nvim-cmp.setupOpts.completion.completeopt = "menu,menuone,noinsert,noselect";
     snippets.luasnip.enable = true;
 
     filetree = {
@@ -148,8 +152,11 @@
       cheatsheet.enable = true;
     };
 
-    telescope.enable = true;
-
+    telescope = {
+      enable = true;
+      mappings.findFiles = "<tab>";
+      setupOpts.defaults.layout_config.horizontal.prompt_position = "bottom";
+    };
     git = {
       enable = true;
       gitsigns.enable = true;
@@ -187,7 +194,7 @@
       motion = {
         hop.enable = true;
         leap.enable = true;
-        precognition.enable = true;
+        precognition.enable = false;
       };
       images = {
         image-nvim.enable = false;
@@ -213,7 +220,7 @@
       borders.enable = true;
       noice.enable = true;
       colorizer.enable = true;
-      modes-nvim.enable = false; # the theme looks terrible with catppuccin
+      modes-nvim.enable = true; # the theme looks terrible with catppuccin
       illuminate.enable = true;
       breadcrumbs = {
         enable = true;
@@ -254,7 +261,7 @@
     };
 
     presence = {
-      neocord.enable = false;
+      neocord.enable = true;
     };
   };
 }
