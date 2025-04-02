@@ -41,6 +41,5 @@ Füge diese Flocke als Eingabe hinzu:
 }
 ```
 
-## Inspiration
-- [neovim-flake](https://github.com/gvolpe/neovim-flake) von [@gvolpe](https://github.com/gvolpe)
-- [nvim-flake](https://github.com/Gerg-L/nvim-flake) von [@Gerg-L](https://github.com/Gerg-L)
+## Konfigurationsrahmenwerk
+[nvf](https://github.com/NotAShelf/nvf)
