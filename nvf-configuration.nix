@@ -6,6 +6,12 @@
   config.vim = {
     viAlias = true;
     vimAlias = true;
+    options = {
+      tabstop = 2;
+      softtabstop = 2;
+      expandtab = true;
+      shiftwidth = 2;
+    };
     debugMode = {
       enable = false;
       level = 16;
