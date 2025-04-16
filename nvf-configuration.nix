@@ -165,8 +165,21 @@
     };
     git = {
       enable = true;
-      gitsigns.enable = true;
-      gitsigns.codeActions.enable = false; # throws an annoying debug message
+      gitsigns = {
+        enable = true;
+        codeActions.enable = false; # throws an annoying debug message
+        mappings = {
+          blameLine = "<leader>gl";
+          nextHunk = "<leader>gn";
+          previewHunk = "<leader>gh";
+          previousHunk = "<leader>gb";
+          resetBuffer = "<leader>gR";
+          resetHunk = "<leader>gr";
+          stageBuffer = "<leader>gS";
+          stageHunk = "<leader>gs";
+          undoStageHunk = "<leader>gu";
+        };
+      };
     };
 
     minimap = {
