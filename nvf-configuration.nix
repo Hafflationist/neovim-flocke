@@ -18,6 +18,12 @@
       logFile = "/tmp/nvim.log";
     };
 
+    # keymaps = [
+    #   # Da solte ich mal reinschauen:
+    #   # https://notashelf.github.io/nvf/options.html#opt-vim.keymaps
+    #   # https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+    # ];
+
     spellcheck = {
       enable = true;
     };
@@ -30,7 +36,6 @@
       trouble.enable = true;
       lspSignature.enable = true;
       otter-nvim.enable = true;
-      lsplines.enable = true;
       nvim-docs-view.enable = true;
     };
 
@@ -41,10 +46,10 @@
       };
     };
 
+    lsp.enable = true;
     # This section does not include a comprehensive list of available language modules.
     # To list all available language module options, please visit the nvf manual.
     languages = {
-      enableLSP = true;
       enableFormat = true;
       enableTreesitter = true;
       enableExtraDiagnostics = true;
@@ -86,7 +91,10 @@
       dart.enable = false;
       ocaml.enable = false;
       elixir.enable = false;
-      haskell.enable = true;
+      haskell = {
+        enable = true;
+        # lsp.enable = true;
+      };
       ruby.enable = false;
 
       tailwind.enable = false;
