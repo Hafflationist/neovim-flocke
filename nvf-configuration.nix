@@ -146,7 +146,11 @@
 
     autocomplete.nvim-cmp.enable = true;
     # autocomplete.nvim-cmp.mappings.complete = "<tab>";
-    autocomplete.nvim-cmp.setupOpts.completion.completeopt = "menu,menuone,noinsert,noselect";
+    # Quelle: https://stackoverflow.com/questions/74688630/make-nvim-cmp-not-autoselect-the-1st-option
+    autocomplete.nvim-cmp.setupOpts = {
+      preselect = "none";
+      completion.completeopt = "menu,menuone,noinsert,noselect";
+    };
     snippets.luasnip.enable = true;
 
     filetree = {
